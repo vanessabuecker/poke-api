@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@ionic/angular": "^7.8.6",
+    "@ionic/angular-server": "^7.8.6",
+    "@ionic/angular-toolkit": "^9.0.0",
+    "rxjs": "^7.5.0"
+  }
+}
