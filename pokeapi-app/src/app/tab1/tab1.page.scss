@@ -1,0 +1,54 @@
+ion-toolbar {
+  --background: #ef5350;
+  --color: #ffffff;
+  font-family: 'Pokemon Solid'
+}
+
+ion-title {
+  font-size: 28px;
+  text-align: center;
+}
+
+ion-item {
+  --background: #fcdddc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+ion-thumbnail img {
+  border-radius: 60%;
+  border: 2px solid #fffebe;
+}
+
+ion-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#pokeballIcon {
+  width: 2%;
+}
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+.pokemon-list {
+  flex: 1;
+}
+
+.side-image {
+  flex-shrink: 0;
+}
+
+.side-image img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
