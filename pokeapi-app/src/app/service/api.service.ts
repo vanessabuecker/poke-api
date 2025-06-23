@@ -6,6 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getPokeList(limit: number = 100) {
+    return this.http.get(`${this.url}pokemon?limit=${limit}`);
+  }
 }
 
