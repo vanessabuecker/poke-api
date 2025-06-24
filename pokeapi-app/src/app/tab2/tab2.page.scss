@@ -17,6 +17,11 @@ ion-item {
   gap: 12px;
 }
 
+ion-content {
+  --padding-top: 0;
+  padding: 0 !important;
+}
+
 ion-thumbnail img {
   border-radius: 60%;
   border: 2px solid #fffebe;
@@ -27,16 +32,16 @@ ion-label {
   font-weight: 600;
 }
 
-#pokeballIcon {
+#pokeball-icon {
   width: 2%;
 }
 
-.content-wrapper {
+.content-flex {
   display: flex;
-  gap: 20px;
-  padding: 16px;
+  flex-direction: row;
   align-items: flex-start;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .pokemon-list {
@@ -44,7 +49,8 @@ ion-label {
 }
 
 .side-image {
-  flex-shrink: 0;
+  margin-top: 10%;
+  margin-left: 10px;
 }
 
 .side-image img {
@@ -52,6 +58,10 @@ ion-label {
   max-width: 100%;
   height: auto;
   border-radius: 16px;
+}
+
+ion-list {
+  margin-top: 5%;
 }
 
 audio {
