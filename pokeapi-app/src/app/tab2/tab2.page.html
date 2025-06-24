@@ -12,8 +12,15 @@
           <img [src]="pokemon.image" alt="{{ pokemon.name }}" style="width: 50px; margin-right: 10px;">
           <ion-label>
             <h2>{{ pokemon.name | titlecase }}</h2>
-            <p><strong>Tipos:</strong> {{ pokemon.types.join(', ') }}</p>
-            <p><strong>Habilidades:</strong> {{ pokemon.abilities.join(', ') }}</p>
+            <p><strong>Experiência Base:</strong> {{ pokemon.base_experience }}</p>
+            <p><strong>Altura:</strong> {{ pokemon.height }}</p>
+            <p><strong>Peso:</strong> {{ pokemon.weight }}</p>
+            <p><strong>Tipos:</strong> {{ pokemon.types.join(', ') | titlecase }}</p>
+            <p><strong>Habilidades:</strong> {{ pokemon.abilities.join(', ') | titlecase }}</p>
+            <p><strong>Movimentos:</strong> {{ pokemon.moves.join(', ') | titlecase }}</p>
+            <p><strong>Sons:</strong></p>
+            <audio controls [src]="pokemon.cry.latest"></audio>
+            <audio controls [src]="pokemon.cry.legacy"></audio>
           </ion-label>
         </ion-item>
       </ion-list>
