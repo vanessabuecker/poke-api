@@ -1,54 +1,73 @@
-ion-toolbar {
-  --background: #ef5350;
-  --color: #ffffff;
-  font-family: 'Pokemon Solid'
-}
+  ion-toolbar {
+    --background: #ef5350;
+    --color: #ffffff;
+    font-family: 'Pokemon Solid'
+  }
+  .content-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
 
-ion-title {
-  font-size: 28px;
-  text-align: center;
-}
+  ion-content {
+    --padding-top: 0;
+    padding: 0 !important;
+  }
 
-ion-item {
-  --background: #fcdddc;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  display: flex;
-  gap: 12px;
-}
+  ion-title {
+    font-size: 28px;
+    text-align: center;
+  }
 
-ion-thumbnail img {
-  border-radius: 60%;
-  border: 2px solid #fffebe;
-}
+  ion-item {
+    --background: #fcdddc;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 12px;
+  }
 
-ion-label {
-  font-size: 18px;
-  font-weight: 600;
-}
+  ion-thumbnail img {
+    border-radius: 60%;
+    border: 2px solid #fffebe;
+  }
 
-#pokeballIcon {
-  width: 2%;
-}
-.content-wrapper {
-  display: flex;
-  gap: 20px;
-  padding: 16px;
-  align-items: flex-start;
-  flex-wrap: wrap; 
-}
+  ion-label {
+    font-size: 18px;
+    font-weight: 600;
+  }
 
-.pokemon-list {
-  flex: 1;
-}
+  #pokeball-icon {
+    width: 2%;
+  }
 
-.side-image {
-  flex-shrink: 0;
-}
+  .pokemon-list {
+    flex: 1;
+  }
 
-.side-image img {
-  width: 250px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-}
+  .side-image {
+    margin-top: 10%;
+    margin-left: 10px;
+  }
+
+  ion-list {
+    margin-top: 5px;
+  }
+
+  .side-image img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+
+
+
+
+
+
+
+

@@ -1,11 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Pokemons <img id="pokeballIcon" src="../assets/icon/pokeball.png" /></ion-title>
+    <ion-title>
+      Pokemons <img id="pokeball-icon" src="../assets/icon/pokeball.png" />
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<div class="content-wrapper">
-  <ion-content *ngIf="pokemons.length > 0">
+<ion-content [fullscreen]="true">
+  <div class="content-flex">
     <div class="pokemon-list">
       <ion-list>
         <ion-item *ngFor="let pokemon of pokemons">
@@ -25,7 +27,6 @@
         </ion-item>
       </ion-list>
     </div>
-  </ion-content>
 
   <div class="side-image">
     <img src="assets/ash.png" alt="Ash Ketchum" />
